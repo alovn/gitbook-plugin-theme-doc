@@ -1,10 +1,10 @@
-{% extends template.self %}
+{% extends "./layout.html" %}
 {% block body %}
 <div class="book">
 	<div class="header-inner">
 		<!-- LOGO -->
-		{% if book.themeDoc.logo %}
-			<div class="logo" style="background-image:url({{ book.themeDoc.logo }});"></div>
+		{% if config.pluginsConfig['theme-doc'].logo %}
+			<div class="logo" style="background-image:url({{ config.pluginsConfig['theme-doc'].logo | resolveFile}});"></div>
 		{% endif %}
 		<span class="title"></span>
 

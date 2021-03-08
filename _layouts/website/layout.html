@@ -7,7 +7,11 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ "images/apple-touch-icon-precomposed-152.png"|resolveAsset }}">
-    <link rel="shortcut icon" href="{{ "images/favicon.ico"|resolveAsset }}" type="image/x-icon">
+    {% if config.pluginsConfig['theme-doc'].favicon %}
+        <link rel="shortcut icon" href="{{ config.pluginsConfig['theme-doc'].favicon | resolveFile }}" type="image/x-icon">
+    {% else %}
+        <link rel="shortcut icon" href="{{ "images/favicon.ico" | resolveAsset }}" type="image/x-icon">
+	{% endif %}
 {% endblock %}
 
 {% block style %}
