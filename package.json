@@ -1,11 +1,20 @@
 {
+  "name": "gitbook-plugin-theme-doc",
+  "author": {
+    "name": "alovn"
+  },
   "keywords": [
     "gitbook",
     "theme",
     "doc"
   ],
+  "dependencies": {},
+  "description": "Gitbook theme for docs",
+  "engines": {
+    "gitbook": ">=3.0.0"
+  },
   "main": "index.js",
-  "name": "gitbook-plugin-theme-doc",
+  
   "optionalDependencies": {},
   "readme": "",
   "readmeFilename": "README.md",
