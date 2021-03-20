@@ -22,5 +22,16 @@
     <body>
         {% block body %}{% endblock %}
         {% block javascript %}{% endblock %}
+        {% if config.pluginsConfig['theme-doc'].ba_track_id %}
+        <script>
+            var _hmt = _hmt || [];
+            (function() {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?{{config.pluginsConfig['theme-doc'].ba_track_id}}";
+                var s = document.getElementsByTagName("script")[0]; 
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+        {% endif %}
     </body>
 </html>
