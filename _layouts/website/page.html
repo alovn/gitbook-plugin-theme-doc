@@ -33,7 +33,7 @@
 		{% if config.pluginsConfig['theme-doc'].logo %}
 			<div class="logo" style="background-image:url({{ config.pluginsConfig['theme-doc'].logo | resolveFile}});"></div>
 		{% endif %}
-		<span class="title"></span>
+		<span class="title">{{config.title}}</span>
 
 		<!-- Search -->
 		{% block search_input %}{% endblock %}

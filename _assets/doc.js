@@ -46,10 +46,6 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
 
     //基础设置
     function setBase(){
-        //标题
-        var $title = $(".header-inner .title");
-        $title.text(gitbook.state.config.title);
-
         //搜索框
         var $search = $('#book-search-input');
         var placeholder = gitbook.state.config.pluginsConfig["theme-doc"]["search-placeholder"] || "输入关键字搜索"
