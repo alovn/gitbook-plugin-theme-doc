@@ -25,6 +25,7 @@ Add the theme to your book's configuration `book.json` or `book.js`:
             "search-placeholder":"输入关键字搜索", //搜索框提示信息
             "logo":"./logo.png", //logo地址
             "favicon": "./favicon.ico", //ico地址
+            "apple_touch_icon":"./images/apple-touch-icon.png",
             "ba_track_id":"", //百度统计代码
         }
     }

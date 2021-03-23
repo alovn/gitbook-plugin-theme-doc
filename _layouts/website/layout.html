@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ "images/apple-touch-icon-precomposed-152.png"|resolveAsset }}">
+    {% if config.pluginsConfig['theme-doc'].apple_touch_icon %}
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ config.pluginsConfig['theme-doc'].apple_touch_icon | resolveFile }}">
+    {% endif %}
+    
     {% if config.pluginsConfig['theme-doc'].favicon %}
         <link rel="shortcut icon" href="{{ config.pluginsConfig['theme-doc'].favicon | resolveFile }}" type="image/x-icon">
     {% else %}
