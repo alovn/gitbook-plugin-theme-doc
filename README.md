@@ -7,7 +7,7 @@ Add the theme to your book's configuration `book.json` or `book.js`:
 ```js
 {
     "plugins": [
-        "theme-doc@git+ssh://git@github.com:alovn/gitbook-plugin-theme-doc.git"
+        "theme-doc@git+https://github.com/alovn/gitbook-plugin-theme-doc.git"
     ],
     "variables": {
         "themeDoc":{
